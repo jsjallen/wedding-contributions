@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe & Simon Wedding</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #656F35; 
+      --cream: #F3E9D2; /* Softer whiter cream */
+      --cream-hover: #FFF8EE;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'Cormorant Garamond', serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 160px;
+      max-width: 40vw;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      font-weight: 500;
+      line-height: 1.35;
+      letter-spacing: 0.02em;
+      margin-bottom: 50px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 36px;
+      border: 1px solid var(--cream);
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+
+    .button:hover {
+      background: var(--cream-hover);
+      color: var(--bg);
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 120px;
+        margin-bottom: 35px;
+      }
+
+      h1 {
+        margin-bottom: 40px;
+      }
+
+      .button {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <img src="Logo JS transparent.png" alt="Joe & Simon Logo" class="logo">
+
+    <h1>
+      Contributions for Joe &amp; Simon's Wedding have now closed.
+      If you have not yet made yours to attend the weekend,
+      please contact the couple directly.
+    </h1>
+
+    <a 
+      class="button"
+      href="mailto:ja@josi.uk,sl@josi.uk?subject=Wedding Contribution"
+    >
+      Email Joe &amp; Simon
+    </a>
+
+  </div>
+</body>
+</html>
